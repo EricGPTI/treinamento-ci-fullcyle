@@ -32,3 +32,11 @@ jobs:
         with: 
           push: true
           tags: ericgomes/treinamento-ci-fullcyle:latest
+      
+      - name: SonarQube Scan
+        with:
+          fetch-depth: 0  
+      - uses: sonarsource/sonarqube-scan-action@v4
+        env:
+          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+          SONAR_HOST_URL: ${{ secrets.SONAR_HOST_URL }}
