@@ -1,0 +1,4 @@
+sonar.projectKey=go-project
+sonar.sources=.
+sonar.host.url=http://localhost:9000
+sonar.login=sqp_d60914424dc27d9e61536602ea7e2a84e2fa8735
